@@ -14,7 +14,16 @@ class ViewController: UIViewController {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
     }
-
-
+    
+    func calculate(x: Int, y: Int) -> Int {
+        
+        guard x > 5 else { return y }
+        
+        return x + y
+    }
+    
+    func hasDecimalNumbers(_ string: String) -> Bool {
+        return string.rangeOfCharacter(from: .decimalDigits) != nil
+    }
 }
 

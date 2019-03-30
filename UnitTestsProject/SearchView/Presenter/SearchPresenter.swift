@@ -28,7 +28,16 @@ class SearchPresenter: SearchViewOutput {
         guard let text = text, let currentSettings = databaseManager.getObjects(with: SettingsModel.self)?.first else { return }
         
         let searchTextForRequest = text.replacingOccurrences(of: " ", with: "+", options: .literal, range: nil)
-        let urlString = "https://itunes.apple.com/search?term=\(searchTextForRequest)&country=US&media=\(currentSettings.mediaType)&limit=\(currentSettings.searchResultsCount)"
+        var softwareTypeOptions = ""
+        
+        if currentSettings.mediaType == MediaPickOptions.software.rawValue {
+            softwareTypeOptions = "\(currentSettings.mediaType)&entity=\(currentSettings.softwareType)"
+        }
+        else {
+            softwareTypeOptions = currentSettings.mediaType
+        }
+        
+        let urlString = "https://itunes.apple.com/search?term=\(searchTextForRequest)&country=US&media=\(softwareTypeOptions)&limit=\(currentSettings.searchResultsCount)"
         
         if let url = URL(string: urlString) {
             

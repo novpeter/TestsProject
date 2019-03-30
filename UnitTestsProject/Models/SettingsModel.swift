@@ -16,7 +16,7 @@ class SettingsModel: Object {
     dynamic var id: String = String(describing: UUID.init())
     
     /// Type of media
-    dynamic var mediaType: String = PickOptions.all.rawValue
+    dynamic var mediaType: String = MediaPickOptions.all.rawValue
     
     /// Count of search results
     dynamic var softwareType: String = "softwareType"

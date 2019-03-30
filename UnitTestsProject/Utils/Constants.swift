@@ -12,7 +12,7 @@ enum Identifires: String {
     case cell
 }
 
-enum PickOptions: String {
+enum MediaPickOptions: String {
     case all
     case movie
     case software
@@ -25,10 +25,10 @@ class Constants {
     
     static func getOptions() -> [String] {
         return [
-            PickOptions.all.rawValue,
-            PickOptions.movie.rawValue,
-            PickOptions.software.rawValue,
-            PickOptions.music.rawValue
+            MediaPickOptions.all.rawValue,
+            MediaPickOptions.movie.rawValue,
+            MediaPickOptions.software.rawValue,
+            MediaPickOptions.music.rawValue
         ]
     }
 }

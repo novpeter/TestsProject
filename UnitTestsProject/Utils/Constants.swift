@@ -23,7 +23,7 @@ let softwareTypes: [String] = ["software", "iPadSoftware"]
 
 class Constants {
     
-    static func getOptions() -> [String] {
+    static func getMediaTypeOptions() -> [String] {
         return [
             MediaPickOptions.all.rawValue,
             MediaPickOptions.movie.rawValue,
@@ -32,4 +32,3 @@ class Constants {
         ]
     }
 }
-

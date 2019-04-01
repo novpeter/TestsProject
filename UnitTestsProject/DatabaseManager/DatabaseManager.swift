@@ -12,14 +12,13 @@ import RealmSwift
 
 final class DatabaseManager: DatabaseManagerProtocol {
     
-    internal lazy var mainRealm: Realm = try! Realm(configuration: .defaultConfiguration)
+    internal var mainRealm: Realm!
     
     // MARK: - Operation queues
     
     private lazy var getOperationQueue: OperationQueue = {
         
         let queue = OperationQueue()
-        queue.qualityOfService = .userInteractive
         queue.name = "Get operation queue"
         
         return queue
@@ -41,6 +40,9 @@ final class DatabaseManager: DatabaseManagerProtocol {
         return queue
     }()
     
+    init() {
+        mainRealm = try! Realm()
+    }
     
     // MARK: - Get objects
     

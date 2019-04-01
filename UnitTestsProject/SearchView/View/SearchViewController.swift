@@ -101,20 +101,15 @@ class SearchViewController: UIViewController, UITableViewDelegate, UITableViewDa
             self?.tableView.reloadData()
         }
     }
-    
-    private func searchBarIsEmpty() -> Bool {
-        return searchController.searchBar.text?.isEmpty ?? true
-    }
 }
 
 extension SearchViewController: UISearchResultsUpdating, SFSafariViewControllerDelegate {
     
     func updateSearchResults(for searchController: UISearchController) {
-        searchPresenter.search(for: searchController.searchBar.text!)
+        searchPresenter.search(for: searchController.searchBar.text ?? "")
     }
     
     func safariViewControllerDidFinish(_ controller: SFSafariViewController) {
         controller.dismiss(animated: true, completion: nil)
     }
 }
-

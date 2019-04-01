@@ -9,6 +9,24 @@
 			<key>orderHint</key>
 			<integer>4</integer>
 		</dict>
+		<key>UnitTestsProjectTests.xcscheme_^#shared#^_</key>
+		<dict>
+			<key>orderHint</key>
+			<integer>5</integer>
+		</dict>
+	</dict>
+	<key>SuppressBuildableAutocreation</key>
+	<dict>
+		<key>4BFF39CE224BDA7C0074B375</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>4BFF39E2224BDA7D0074B375</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
 	</dict>
 </dict>
 </plist>

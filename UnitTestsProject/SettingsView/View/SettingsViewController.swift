@@ -49,6 +49,8 @@ class SettingsViewController:
     
     private func attachPickerView() {
         
+        guard mediaTypeTextField != nil else { return }
+        
         let pickerView = UIPickerView()
         pickerView.delegate = self
         pickerView.dataSource = self
@@ -121,12 +123,16 @@ class SettingsViewController:
     
     func setValues(mediaType: String, softwareType: String, searchResultsCount: Int) {
         
+        guard mediaTypePickOptions.contains(mediaType) && searchResultsCount > 0 && searchResultsCount < 201
+            else { return }
+
         mediaTypeTextField.text = mediaType
         searchResultsCountLabel.text = String(searchResultsCount)
         searchResultsSlider.value = Float(searchResultsCount)
-        
+
         if (softwareTypes.contains(softwareType)) {
-            softwareTypeSegmentedControl.selectedSegmentIndex = softwareTypes.firstIndex(of: softwareType) ?? 0
+            let index = softwareTypes.firstIndex(of: softwareType)
+            softwareTypeSegmentedControl.selectedSegmentIndex = index! == -1 ? 0 : index!
         }
     }
     

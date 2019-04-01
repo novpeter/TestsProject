@@ -26,7 +26,7 @@ class SettingsModuleConfigurator: NSObject {
         let databaseManager = DatabaseManager()
         
         view.settingsPresenter = settingsPresenter
-        view.mediaTypePickOptions = Constants.getOptions()
+        view.mediaTypePickOptions = Constants.getMediaTypeOptions()
         settingsPresenter.view = view
         settingsPresenter.databaseManager = databaseManager
         

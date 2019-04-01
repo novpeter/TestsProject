@@ -19,14 +19,12 @@ class SettingsPresenter: SettingsViewOutput {
     /// Current settings
     var currentSettings: SettingsModel!
     
-
-    
     
     func setMediaType(type: String?) {
         
         guard let type = type else { return }
         
-        if Constants.getOptions().contains(type) {
+        if Constants.getMediaTypeOptions().contains(type) {
             
             databaseManager.performTransaction {
                 currentSettings.mediaType = type

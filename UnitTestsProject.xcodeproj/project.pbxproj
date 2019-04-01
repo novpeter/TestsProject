@@ -7,12 +7,21 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		4B6249172250BC380007F58E /* SettingsViewTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B6249162250BC380007F58E /* SettingsViewTests.swift */; };
+		4B62491A2250BC670007F58E /* SettingsPresenterTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B6249192250BC670007F58E /* SettingsPresenterTests.swift */; };
+		4B62491C2250E5640007F58E /* SettingsViewControllerMock.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B62491B2250E5640007F58E /* SettingsViewControllerMock.swift */; };
+		4B62491E225100D40007F58E /* SearchViewTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B62491D225100D40007F58E /* SearchViewTests.swift */; };
+		4B624920225100E10007F58E /* SearchPresenterTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B62491F225100E10007F58E /* SearchPresenterTests.swift */; };
+		4B6249232251010C0007F58E /* SearchPresenterMock.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B6249222251010C0007F58E /* SearchPresenterMock.swift */; };
+		4B6249252251011C0007F58E /* SearchViewControllerMock.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B6249242251011C0007F58E /* SearchViewControllerMock.swift */; };
 		4B6D5DBD224FE09900BD5D1B /* ResponseModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B6D5DBC224FE09900BD5D1B /* ResponseModel.swift */; };
 		4B71C8AC224D1EF00050A93C /* SearchResult.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B71C8AB224D1EF00050A93C /* SearchResult.swift */; };
-		4B71C8AE224DF6880050A93C /* SettingsTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B71C8AD224DF6880050A93C /* SettingsTest.swift */; };
-		4B71C8B1224DF7590050A93C /* SettingsViewOutputMock.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B71C8B0224DF7590050A93C /* SettingsViewOutputMock.swift */; };
+		4B71C8B1224DF7590050A93C /* SettingsPresenterMock.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B71C8B0224DF7590050A93C /* SettingsPresenterMock.swift */; };
 		4BA26E8B224C20FB001DBEAA /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4BA26E8A224C20FB001DBEAA /* Constants.swift */; };
 		4BCE97D2224FF8B20084164D /* SearchResultCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4BCE97D1224FF8B20084164D /* SearchResultCell.swift */; };
+		4BEC2188225220F800499590 /* DatabaseManagerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4BEC2187225220F800499590 /* DatabaseManagerTests.swift */; };
+		4BEC218A2252235D00499590 /* DatabaseObjectsMock.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4BEC21892252235D00499590 /* DatabaseObjectsMock.swift */; };
+		4BEC218C22529BF900499590 /* TestCaseBase.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4BEC218B22529BF900499590 /* TestCaseBase.swift */; };
 		4BFF39D3224BDA7C0074B375 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4BFF39D2224BDA7C0074B375 /* AppDelegate.swift */; };
 		4BFF39D8224BDA7C0074B375 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4BFF39D6224BDA7C0074B375 /* Main.storyboard */; };
 		4BFF39DA224BDA7D0074B375 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4BFF39D9224BDA7D0074B375 /* Assets.xcassets */; };
@@ -48,12 +57,21 @@
 
 /* Begin PBXFileReference section */
 		10E5B0DC33E569C0700CC0F4 /* Pods-UnitTestsProject.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-UnitTestsProject.debug.xcconfig"; path = "Target Support Files/Pods-UnitTestsProject/Pods-UnitTestsProject.debug.xcconfig"; sourceTree = "<group>"; };
+		4B6249162250BC380007F58E /* SettingsViewTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsViewTests.swift; sourceTree = "<group>"; };
+		4B6249192250BC670007F58E /* SettingsPresenterTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsPresenterTests.swift; sourceTree = "<group>"; };
+		4B62491B2250E5640007F58E /* SettingsViewControllerMock.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsViewControllerMock.swift; sourceTree = "<group>"; };
+		4B62491D225100D40007F58E /* SearchViewTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchViewTests.swift; sourceTree = "<group>"; };
+		4B62491F225100E10007F58E /* SearchPresenterTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchPresenterTests.swift; sourceTree = "<group>"; };
+		4B6249222251010C0007F58E /* SearchPresenterMock.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchPresenterMock.swift; sourceTree = "<group>"; };
+		4B6249242251011C0007F58E /* SearchViewControllerMock.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchViewControllerMock.swift; sourceTree = "<group>"; };
 		4B6D5DBC224FE09900BD5D1B /* ResponseModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResponseModel.swift; sourceTree = "<group>"; };
 		4B71C8AB224D1EF00050A93C /* SearchResult.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchResult.swift; sourceTree = "<group>"; };
-		4B71C8AD224DF6880050A93C /* SettingsTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsTest.swift; sourceTree = "<group>"; };
-		4B71C8B0224DF7590050A93C /* SettingsViewOutputMock.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsViewOutputMock.swift; sourceTree = "<group>"; };
+		4B71C8B0224DF7590050A93C /* SettingsPresenterMock.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsPresenterMock.swift; sourceTree = "<group>"; };
 		4BA26E8A224C20FB001DBEAA /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
 		4BCE97D1224FF8B20084164D /* SearchResultCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchResultCell.swift; sourceTree = "<group>"; };
+		4BEC2187225220F800499590 /* DatabaseManagerTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DatabaseManagerTests.swift; sourceTree = "<group>"; };
+		4BEC21892252235D00499590 /* DatabaseObjectsMock.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DatabaseObjectsMock.swift; sourceTree = "<group>"; };
+		4BEC218B22529BF900499590 /* TestCaseBase.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestCaseBase.swift; sourceTree = "<group>"; };
 		4BFF39CF224BDA7C0074B375 /* UnitTestsProject.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = UnitTestsProject.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		4BFF39D2224BDA7C0074B375 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		4BFF39D7224BDA7C0074B375 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -104,13 +122,51 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		4B71C8AF224DF6990050A93C /* SettingsTest */ = {
+		4B6249152250B95B0007F58E /* SearchModuleTests */ = {
 			isa = PBXGroup;
 			children = (
-				4B71C8AD224DF6880050A93C /* SettingsTest.swift */,
-				4B71C8B0224DF7590050A93C /* SettingsViewOutputMock.swift */,
+				4B624921225100F60007F58E /* SearchMocks */,
+				4B62491D225100D40007F58E /* SearchViewTests.swift */,
+				4B62491F225100E10007F58E /* SearchPresenterTests.swift */,
 			);
-			path = SettingsTest;
+			path = SearchModuleTests;
+			sourceTree = "<group>";
+		};
+		4B6249182250BC470007F58E /* SettingsMocks */ = {
+			isa = PBXGroup;
+			children = (
+				4B71C8B0224DF7590050A93C /* SettingsPresenterMock.swift */,
+				4B62491B2250E5640007F58E /* SettingsViewControllerMock.swift */,
+			);
+			path = SettingsMocks;
+			sourceTree = "<group>";
+		};
+		4B624921225100F60007F58E /* SearchMocks */ = {
+			isa = PBXGroup;
+			children = (
+				4B6249222251010C0007F58E /* SearchPresenterMock.swift */,
+				4B6249242251011C0007F58E /* SearchViewControllerMock.swift */,
+			);
+			path = SearchMocks;
+			sourceTree = "<group>";
+		};
+		4B71C8AF224DF6990050A93C /* SettingsModuleTests */ = {
+			isa = PBXGroup;
+			children = (
+				4B6249182250BC470007F58E /* SettingsMocks */,
+				4B6249162250BC380007F58E /* SettingsViewTests.swift */,
+				4B6249192250BC670007F58E /* SettingsPresenterTests.swift */,
+			);
+			path = SettingsModuleTests;
+			sourceTree = "<group>";
+		};
+		4BEC2186225220DF00499590 /* DatabaseManagerTests */ = {
+			isa = PBXGroup;
+			children = (
+				4BEC2187225220F800499590 /* DatabaseManagerTests.swift */,
+				4BEC21892252235D00499590 /* DatabaseObjectsMock.swift */,
+			);
+			path = DatabaseManagerTests;
 			sourceTree = "<group>";
 		};
 		4BFF39C6224BDA7C0074B375 = {
@@ -154,8 +210,11 @@
 		4BFF39E6224BDA7D0074B375 /* UnitTestsProjectTests */ = {
 			isa = PBXGroup;
 			children = (
-				4B71C8AF224DF6990050A93C /* SettingsTest */,
+				4BEC2186225220DF00499590 /* DatabaseManagerTests */,
+				4B6249152250B95B0007F58E /* SearchModuleTests */,
+				4B71C8AF224DF6990050A93C /* SettingsModuleTests */,
 				4BFF39E9224BDA7D0074B375 /* Info.plist */,
+				4BEC218B22529BF900499590 /* TestCaseBase.swift */,
 			);
 			path = UnitTestsProjectTests;
 			sourceTree = "<group>";
@@ -500,8 +559,17 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				4B71C8B1224DF7590050A93C /* SettingsViewOutputMock.swift in Sources */,
-				4B71C8AE224DF6880050A93C /* SettingsTest.swift in Sources */,
+				4B6249252251011C0007F58E /* SearchViewControllerMock.swift in Sources */,
+				4BEC218A2252235D00499590 /* DatabaseObjectsMock.swift in Sources */,
+				4B624920225100E10007F58E /* SearchPresenterTests.swift in Sources */,
+				4B62491A2250BC670007F58E /* SettingsPresenterTests.swift in Sources */,
+				4B6249172250BC380007F58E /* SettingsViewTests.swift in Sources */,
+				4B6249232251010C0007F58E /* SearchPresenterMock.swift in Sources */,
+				4B62491C2250E5640007F58E /* SettingsViewControllerMock.swift in Sources */,
+				4B62491E225100D40007F58E /* SearchViewTests.swift in Sources */,
+				4B71C8B1224DF7590050A93C /* SettingsPresenterMock.swift in Sources */,
+				4BEC2188225220F800499590 /* DatabaseManagerTests.swift in Sources */,
+				4BEC218C22529BF900499590 /* TestCaseBase.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

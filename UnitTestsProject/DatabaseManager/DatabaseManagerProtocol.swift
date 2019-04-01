@@ -11,7 +11,7 @@ import RealmSwift
 
 protocol DatabaseManagerProtocol {
     
-    var mainRealm: Realm { get set }
+    var mainRealm: Realm! { get }
     
     /// Return objects by given type
     ///

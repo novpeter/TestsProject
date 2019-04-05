@@ -24,7 +24,7 @@ class UserModel: Object {
     dynamic var age: Int = 0
     
     /// Count of search results
-    dynamic var followers: List<UserModel> = List<UserModel>()
+    var followers: List<UserModel> = List<UserModel>()
     
     override static func primaryKey() -> String? {
         return "id"
